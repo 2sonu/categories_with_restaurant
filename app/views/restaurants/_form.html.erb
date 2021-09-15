@@ -1,0 +1,16 @@
+<%= form_with model: restaurant,url: category_restaurants_path(@category),method: "post" do |form| %>
+  
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+  	<%=form.label :address %><br>
+  	<%= form.text_area :address %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

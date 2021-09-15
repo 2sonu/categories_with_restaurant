@@ -1,0 +1,23 @@
+<%= form_with model: @restaurant,url: category_restaurant_path(@category),method: "put" do |form| %>
+
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :address %><br>
+    <%= form.text_area :address %> 
+  </p>
+  
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
+<!DOCTYPE html>
+<html>
+<style>
+body {background-color: powderblue;}
+table, th, td {
+  border:1px solid black;
